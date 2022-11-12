@@ -6,10 +6,22 @@ const itemNumber = document.querySelector(".item-number");
 
 itemNumber.innerHTML = 0;
 
+function itemAction(action) {
+	if (action === "subtract") {
+		if (itemNumber.innerHTML > 0) {
+			itemNumber.innerHTML--;
+		}
+	} else if (action === "add") {
+		itemNumber.innerHTML++;
+	} else {
+		alert("Unkown action performed!, Please try again.");
+	}
+}
+
 btnAddItem.addEventListener("click", () => {
-	itemNumber.innerHTML++;
+	itemAction("add");
 });
 
 btnSubtractItem.addEventListener("click", () => {
-	itemNumber.innerHTML--;
+	itemAction("subtract");
 });

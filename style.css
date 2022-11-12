@@ -177,6 +177,7 @@ body {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 /* button design | ends here */
