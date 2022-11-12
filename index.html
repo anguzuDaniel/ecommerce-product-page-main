@@ -15,6 +15,8 @@
 		<title>Frontend Mentor | E-commerce product page</title>
 
 		<link rel="stylesheet" href="style.css" />
+
+		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<header class="navigation">
@@ -114,9 +116,15 @@
 
 					<div class="addToCart">
 						<div class="item_count">
-							<img src="images/icon-minus.svg" alt="" srcset="" />
-							<span>0</span>
-							<img src="images/icon-plus.svg" alt="" srcset="" />
+							<button class="btn-item item-subtract">
+								<img src="images/icon-minus.svg" alt="" srcset="" />
+							</button>
+
+							<span class="item-number">0</span>
+
+							<button class="btn-item item-add">
+								<img src="images/icon-plus.svg" alt="" srcset="" />
+							</button>
 						</div>
 
 						<button class="btn">
